@@ -1,0 +1,24 @@
+<?php
+
+/*
+Place the name of any custom template you wish to produce into the array below.  
+For Example if you wanted the template file of uc_order-mytemplate.tpl.php
+You would insert 'mytemplate' into the array below, so that it would read:-
+
+return array('admin', 'customer','uber_invoice','mytemplate',);
+
+*/
+function uber_invoice_uc_invoice_templates() {
+  return array('admin', 'customer',,'uberadmin','ubercustomer',);
+}
+
+function uber_invoice_theme_registry_alter(&$theme_registry) {
+  // so that templates are searched in uber_invoice directory and not Core Ubercart
+    $theme_registry['uc_order']['theme paths'][] = drupal_get_path('module', 'uber_invoice');
+}
+
+
+/*
+function uber_invoice_preprocess_uc_order(){	
+}
+*/

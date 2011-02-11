@@ -46,3 +46,9 @@ USAGE
 		-uc_order-uberadmin.tpl.php
 		
 		Edit these invoices as you wish and save.
+		
+		Additional templates can be created by editing uber_invoice_uc_invoice_templates()
+		function in the uber_invoice.module file (See comments).
+		
+2.  After you made your changes you need to select the template in the Ubercart configuration
+		and also modify the conditional actions to use your new template.

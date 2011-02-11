@@ -7,18 +7,17 @@ You would insert 'mytemplate' into the array below, so that it would read:-
 
 return array('admin', 'customer','uber_invoice','mytemplate',);
 
+The file uc_order-mytemplate.tpl.php should be held within this module directory 
+and not your theme folder.
 */
 function uber_invoice_uc_invoice_templates() {
   return array('admin', 'customer','uberadmin','ubercustomer',);
 }
 
+
+/* 
+Templates are searched in uber_invoice directory and not Core Ubercart
+*/
 function uber_invoice_theme_registry_alter(&$theme_registry) {
-  // so that templates are searched in uber_invoice directory and not Core Ubercart
     $theme_registry['uc_order']['theme paths'][] = drupal_get_path('module', 'uber_invoice');
 }
-
-
-/*
-function uber_invoice_preprocess_uc_order(){	
-}
-*/

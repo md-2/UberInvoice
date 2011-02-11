@@ -1,6 +1,6 @@
 ; $Id: uber_invoice.info,v 1 Exp $
 name = Uber Invoice
 description = Helper module to move Ubercart Invoice Templates out of Ubercart folder for customisation
-package = Ubercart
+package = "Ubercart - extra"
 core = "6.x"
-dependencies[] = ubercart
+dependencies[] = uc_order

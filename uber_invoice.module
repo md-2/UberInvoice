@@ -9,7 +9,7 @@ return array('admin', 'customer','uber_invoice','mytemplate',);
 
 */
 function uber_invoice_uc_invoice_templates() {
-  return array('admin', 'customer',,'uberadmin','ubercustomer',);
+  return array('admin', 'customer','uberadmin','ubercustomer',);
 }
 
 function uber_invoice_theme_registry_alter(&$theme_registry) {

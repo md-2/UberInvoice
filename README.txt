@@ -11,7 +11,7 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-Current Maintainer: Mark Davies <mark.davies@ixis.co.uk>
+Current Maintainer: Mark Davies <mark@618designs.co.uk>
 
 Uber_Invoice is a simple helper module that allows users to override the 
 default Ubercart invoice templates by enabling the module and editing the 
